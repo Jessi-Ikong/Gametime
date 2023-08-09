@@ -1,0 +1,53 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        background-color: goldenrod;
+      }
+      .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     }
+
+      img {
+        height: 400px;
+        margin-top: 10px;
+      }
+      h3 {
+        margin-top: 10px;
+        font-family: serif;
+      }
+     
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Refresh the page to play again</h3>
+      <img src="FB_IMG_16914215411908088.jpg" alt="Beauty">
+    </div>
+      
+     
+    <script>
+      var name = prompt("What is your name?");
+      var crushName = prompt("What is the name of your crush/boyfriend/girlfriend?");
+
+      var loveScore = Math.random() * 100;
+      loveScore = Math.floor(loveScore) + 1;
+
+      if (loveScore > 69) {
+        alert('Hello ' + name + ', ' +  ' your love score is ' + loveScore + ' %.' + crushName +' loves you too.');  
+      } else if (loveScore > 50 && loveScore <= 69) {
+        alert('Hello ' + name + ', ' +  'your love score is ' + loveScore + ' %. ' + crushName + ' might like you too, shoot your shot!');  
+      } else {
+          alert('Hello ' + name + ', ' + 'your love score is ' + loveScore + ' %.' + ' Oops!, looks like ' + crushName + ' does not like you.');
+      }
+    </script>
+  </body>
+  </html>
